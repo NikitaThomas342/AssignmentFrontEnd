@@ -21,7 +21,7 @@ export const App = () => {
         <button className="btn mb-7" onClick={() => setShowForm(!showForm)}>Create a blog</button>
         {showForm && <InputForm reload={reload}/>}
         {blogs && blogs?.map((blog) => (
-          <p className="2xl bg-gray-500 rounded text-white p-4 m-4">{blog.title}</p>
+          <p className="2xl bg-gray-500 rounded text-white p-4 m-5">{blog.title}</p>
         ))}
       </div>
     </div>
